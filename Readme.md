@@ -86,8 +86,8 @@ Make sure you have the following installed:
 ### Clone the Repository
 
 ```bash
-git clone <your-repository-url>
-cd <your-repository-name>
+git clone https://github.com/MANIKANDAN-17K/Django-Projects.git
+cd Django-projects
 ```
 
 ### Create a Virtual Environment
