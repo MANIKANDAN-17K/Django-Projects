@@ -7,3 +7,5 @@ class Tour(models.Model):
     number_of_days = models.IntegerField()
     price  = models.DecimalField(max_digits=10, decimal_places=2)
     number_of_people = models.IntegerField(default=1)
+    def __str__(self):
+        return f"id: {self.id} - {self.origin_country} to {self.destination_country} for {self.number_of_days} days"

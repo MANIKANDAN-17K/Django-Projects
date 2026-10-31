@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asia Tour Agency - Schedule</title>
+</head>
+<body>
+    <h1>Tour Schedule</h1>
+    <ul>
+        {% for tour in tours %} 
+            <li>
+                <strong>Origin:</strong> {{ tour.origin_country }} <br>
+                <strong>Destination:</strong> {{ tour.destination_country }} <br>
+                <strong>Days:</strong> {{ tour.number_of_days }} <br>
+                <strong>Price:</strong> ${{ tour.price }} <br>
+                <strong>Number of People:</strong> {{ tour.number_of_people }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
