@@ -11,3 +11,5 @@ def schedule(request):
     data = Tour.objects.all()
     context = {'tours': data}
     return render(request, 'tour/schedule.html', context)
+def imageviewer(request):
+    return render(request, 'tour/imageviewer.html')
