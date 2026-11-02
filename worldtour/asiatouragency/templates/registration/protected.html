@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected</title>
+    <link rel="stylesheet" type = "text/css" href="{% static 'styles/protected.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Protected Page</h1>
+        <p>This is a protected page that requires authentication.</p>
+        <a href="{% url 'home' %}">Back to Home</a>
+    </div>
+</body>
+</html>

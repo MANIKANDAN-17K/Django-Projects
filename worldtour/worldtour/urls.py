@@ -16,8 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from asiatouragency import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('asiatouragency.urls')),
+    path('login/', views.login_view, name='login'),
+    path('protected/', views.ProtectedView.as_view, name='protected'),
+    path('logout/', views.logout_view, name='logout'),
+    path('register/', views.register_view, name='register'),
+
 ]
