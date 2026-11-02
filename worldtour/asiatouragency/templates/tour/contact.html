@@ -1,0 +1,23 @@
+{% comment %} 
+    Template Name: Contact Us
+    Template URL: https://templatemo.com/tm-539-contact
+    {% endcomment %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+        <link rel = "stylesheet" href = "{% static 'styles/contact.css' %}">
+    </head>
+    <body>
+        <div class="centered_content">
+            <img src="{% static 'images/logo.png' %}" alt="Logo">
+            <h1>Contact Us</h1>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
